@@ -45,6 +45,8 @@ public class Cipher {
         }
         return finalString;
     }
+    // Public method to test    transformBeforeDecoding
+
     //encoding main class
 
     public String encode(String inputTxt, int codeMain) {

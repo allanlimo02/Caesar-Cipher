@@ -1,4 +1,4 @@
-public class Declaration {
+public class  Declaration {
 
     private String alpha="abcdefghijklmnopqrstuvwxyz";
 
