@@ -4,6 +4,7 @@ public class Declaration {
 
 
     public String getAlpha() {
+
         return alpha;
     };
 
