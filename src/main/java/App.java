@@ -19,11 +19,9 @@ public class App {
                     }else{
                         System.out.println("Great! Now Input text to be encrypted");
                         String tobeEncoded = scan.next();
-                        String encodedFinal= Cipher.Encode(tobeEncoded, encryptingKey);
+                        String encodedFinal= new Cipher().Encode(tobeEncoded, encryptingKey);
                         System.out.println("Your encoded Message is >> \n"+encodedFinal);
                     }
-
-
             } else if (optionMain == 2) {
                 System.out.println("Awesome! now input your encryption key");
                 int decryptingKey = scan.nextInt();
@@ -34,7 +32,7 @@ public class App {
                     String tobeDecoded = scan.next();
 
 
-                    String decodedFinal=Cipher.decode(tobeDecoded,decryptingKey);
+                    String decodedFinal=new Cipher().decode(tobeDecoded,decryptingKey);
                     System.out.println("Your decoded Message is \n >> "+decodedFinal);
 
                 }
