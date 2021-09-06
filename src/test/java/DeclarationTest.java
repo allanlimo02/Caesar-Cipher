@@ -1,4 +1,4 @@
-class DeclarationTest {
+    class DeclarationTest {
     Declaration declare=new Declaration();
 
 }
