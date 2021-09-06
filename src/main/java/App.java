@@ -5,7 +5,7 @@ public class App {
         Declaration declare=new Declaration();
 
         try {
-            Cipher cipher = new Cipher();
+            Cipher Cipher = new Cipher();
             Scanner scan = new Scanner(System.in);
 
             System.out.println("Hey! Select what we can do for you today? \n Select 1 for Encryption or 2 for Decryption");
@@ -19,7 +19,7 @@ public class App {
                     }else{
                         System.out.println("Great! Now Input text to be encrypted");
                         String tobeEncoded = scan.next();
-                        String encodedFinal=cipher.encodeFormatBeforeEncoding(tobeEncoded,encryptingKey);
+                        String encodedFinal= new Cipher().Encode(tobeEncoded, encryptingKey);
                         System.out.println("Your encoded Message is >> \n"+encodedFinal);
                     }
 
@@ -34,7 +34,7 @@ public class App {
                     String tobeDecoded = scan.next();
 
 
-                    String decodedFinal=cipher.encodeFormatBeforeDecoding(tobeDecoded,decryptingKey);
+                    String decodedFinal=Cipher.decode(tobeDecoded,decryptingKey);
                     System.out.println("Your decoded Message is \n >> "+decodedFinal);
 
                 }
