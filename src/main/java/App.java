@@ -26,7 +26,7 @@ public class App {
 
             } else if (optionMain == 2) {
                 System.out.println("Awesome! now input your encryption key");
-                int decryptingKey = scan.nextInt();br
+                int decryptingKey = scan.nextInt();
                 if (decryptingKey>26){
                     System.out.println(">> OPPS!!! Select an Encryption key less than 26 <<");
                 }else{
