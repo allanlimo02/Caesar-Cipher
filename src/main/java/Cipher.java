@@ -1,22 +1,22 @@
 public class Cipher {
     Declaration declare = new Declaration();
-    public  String encodeFormatBeforeEncoding(String encodingString, int key) {
+    public  String transformBeforeEncoding(String inputTxt, int codeMain) {
         String finalString = "";
 
-        if (encodingString.contains(" ")) {
-            String[] arrayVal = encodingString.split(" ");
+        if (inputTxt.contains(" ")) {
+            String[] arrayVal = inputTxt.split(" ");
             for (int i = 0; i <= arrayVal.length - 1; i++) {
-                String encodedString = encode(arrayVal[i], key);
+                String encodedString = encode(arrayVal[i], codeMain);
                 finalString = finalString.concat(encodedString).concat(" ");
             }
         } else {
-            finalString = encode(encodingString, key);
+            finalString = encode(inputTxt, codeMain);
         }
         return finalString;
 
     }
     //
-    public String encodeFormatBeforeDecoding( String decodingString, int key){
+    public String transformBeforeDecoding( String decodingString, int key){
         String finalString="";
 
         if (decodingString.contains(" ")){
