@@ -19,7 +19,7 @@ public class App {
                     }else{
                         System.out.println("Great! Now Input text to be encrypted");
                         String tobeEncoded = scan.next();
-                        String encodedFinal= new Cipher().Encode(tobeEncoded, encryptingKey);
+                        String encodedFinal= Cipher.Encode(tobeEncoded, encryptingKey);
                         System.out.println("Your encoded Message is >> \n"+encodedFinal);
                     }
 
