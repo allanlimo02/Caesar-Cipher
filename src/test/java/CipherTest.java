@@ -18,8 +18,8 @@ class CipherTest {
     }
 
     @Test
-    void encodeFormatBeforeEncoding() {
+    void encodeFinalTrial() {
         Cipher cipher = new Cipher();
-        assertEquals("allan allan",cipher.decode("fqqfs fqqfs ",5));
+        assertEquals("Allan Limo",cipher.decode("Fqqfs%Qnrt",5));
     }
 }

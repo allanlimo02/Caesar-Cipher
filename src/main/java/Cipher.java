@@ -1,6 +1,7 @@
 public class Cipher {
     Declaration declare = new Declaration();
-    public  String transformBeforeEncoding(String inputTxt, int codeMain) {
+
+    public String transformBeforeEncoding(String inputTxt, int codeMain) {
         String finalString = "";
 
         if (inputTxt.contains(" ")) {
@@ -15,7 +16,20 @@ public class Cipher {
         return finalString;
 
     }
+
     //
+    public String encodeFinalTrial(String phrase, int key) {
+        String finalEncoded = "";
+        char[] newArr = phrase.toCharArray();
+        for (char newChars : newArr) {
+            newChars += 5;
+            finalEncoded = finalEncoded + newChars;
+        }
+        return finalEncoded;
+
+    }
+    //
+
     public String transformBeforeDecoding( String decodingString, int key){
         String finalString="";
 
@@ -63,16 +77,16 @@ public class Cipher {
 
 
 
-    public static void main(String[] args) {
-
-        String name="Allan Limo";
-        int key= 5;
-        String money=new Cipher().encodeFormatBeforeEncoding(name,key);
-       // new Cipher().encodeFormatBeforeEncoding("michelle ngetich", 1);
-        System.out.println("Your encoded message is>> "+money);
-
-
-    }
+//    public static void main(String[] args) {
+//
+//        String name="Allan Limo";
+//        int key= 5;
+//        String money=new Cipher transformBeforeEncoding (name,key);
+//       // new Cipher().encodeFormatBeforeEncoding("michelle ngetich", 1);
+//        System.out.println("Your encoded message is>> "+money);
+//
+//
+//    }
 
 
 
