@@ -8,7 +8,7 @@ public class Cipher {
             String[] arrayVal = inputTxt.split(" ");
             for (int i = 0; i <= arrayVal.length - 1; i++) {
                 String encodedString = encode(arrayVal[i], codeMain);
-                finalString = finalString.concat(encodedString).concat(" ");
+                finalString = finalString+encodedString+" ";
             }
         } else {
             finalString = encode(inputTxt, codeMain);
